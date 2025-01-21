@@ -1,0 +1,3 @@
+[submodule "repo/repository.rasen/plugin.video.jackprend"] 
+  path = repo/repository.rasen/plugin.video.jackprend 
+  url = https://github.com/PrevotYann/plugin.video.jackprend
