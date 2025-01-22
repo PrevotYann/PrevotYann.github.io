@@ -1,5 +1,29 @@
 <?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="repository.rasen" name="Rasen repo" version="0.0.4" provider-name="PrevotYann">
+<addons><addon id="plugin.video.jackprend" name="Jackprend" version="0.0.4" provider-name="PrevotYann">
+  <requires>
+    <import addon="xbmc.python" version="3.00.0" />
+    <import addon="script.module.requests" version="2.25.1" />
+    <import addon="script.module.routing" version="0.2.3" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="jacktook.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" />
+  <extension point="xbmc.python.module" library="lib/api" />
+  <extension point="xbmc.python.module" library="lib/bencodepy" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Jackprend</summary>
+    <description lang="en">Kodi addon for torrent streaming in french.</description>
+    <license>GPL-2.0-only</license>
+    <source>https://github.com/PrevotYann/plugin.video.jackprend</source>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.png</fanart>
+      <screenshot>resources/screenshots/home.png</screenshot>
+      <screenshot>resources/screenshots/tv.png</screenshot>
+    </assets>
+ </extension>
+</addon><addon id="repository.rasen" name="Rasen repo" version="0.0.4" provider-name="PrevotYann">
     <extension point="xbmc.addon.repository" name="Example Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/PrevotYann/PrevotYann.github.io/master/repo/zips/addons.xml</info>
